@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.page-header {
+  img {
+    width: 250px;
+  }
+}
+
+.main-navigation {
+  .navigation-list {
+    display: flex;
+    list-style-type: none;
+    padding-top: 1rem;
+  }
+  .navigation-list__item {
+    padding: 5px;
+    margin: 5px;
+    &:hover,
+    &:focus {
+      color: v.$green;
+      border-bottom: 2px solid v.$green;
+    }
+    &--active {
+      color: v.$green;
+      border-bottom: 2px solid v.$green;
+    }
+  }
+}

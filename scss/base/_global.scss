@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  background: linear-gradient(to right, #000000, #444444);
+  color: v.$white;
+  font-family: v.$text-font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
+  a {
+    color: v.$green;
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template: 0.5fr 10fr 0.5fr / 1fr;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}

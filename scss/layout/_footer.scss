@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+
+.page-footer {
+  color: v.$white;
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+.socialnav {
+  a {
+    padding: 0 10px;
+    text-decoration: none;
+  }
+  i:hover,
+  i:focus {
+    color: v.$green;
+    transform: scale(1.2);
+  }
+  p {
+    padding: 1rem;
+  }
+}

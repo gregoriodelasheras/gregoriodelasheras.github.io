@@ -374,6 +374,7 @@ h3 {
     flex-direction: row;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    padding: 3rem 0;
   }
   .page-index .profile__portrait {
     width: 300px;

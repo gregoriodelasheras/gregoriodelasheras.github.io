@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as v;
+
+// index.html
+.page-index {
+  .flex {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
+  .profile__portrait {
+    width: 250px;
+    margin: 1rem 0;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out 0.5s;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      box-shadow: 0 10px 15px 10px rgba(35, 60, 80, 0.16);
+    }
+  }
+  h1 {
+    margin: 1rem 0;
+  }
+  .color-code {
+    color: v.$green;
+  }
+}
+
+.blink {
+  color: v.$green;
+  animation: blink-animation 2s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

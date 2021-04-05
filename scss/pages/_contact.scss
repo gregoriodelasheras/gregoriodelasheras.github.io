@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as v;
+
+// contact.html
+.page-contact {
+  .contact {
+    margin-bottom: 2rem;
+  }
+  .contact-div {
+    h2 {
+      margin: 0 0 1rem 0;
+      color: v.$green;
+    }
+    .form-control {
+      width: 80vw;
+    }
+    .btn {
+      margin: 1rem;
+    }
+  }
+}

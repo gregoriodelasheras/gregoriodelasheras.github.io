@@ -101,10 +101,8 @@
             <h2>Write me a message</h2>
             <!-- Form -->
             <form
-              name="contact"
+              action="https://formsubmit.co/7d772e651cd5151573400e89983ca68b"
               method="POST"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
             >
               <!-- Name -->
               <div>
@@ -112,10 +110,8 @@
                 <input
                   type="text"
                   name="name"
-                  id="name"
                   class="form-control"
                   placeholder="Name"
-                  autocomplete="off"
                   required
                 />
               </div>
@@ -125,10 +121,8 @@
                 <input
                   type="email"
                   name="email"
-                  id="email"
                   class="form-control"
                   placeholder="E-mail"
-                  autocomplete="off"
                   required
                 />
               </div>
@@ -138,31 +132,36 @@
                 <input
                   type="text"
                   name="subject"
-                  id="subject"
                   class="form-control"
                   placeholder="Subject"
-                  autocomplete="off"
                   required
                 />
               </div>
               <!-- Message -->
               <div>
-                <label for="message" class="sr-only">Message: </label>
+                <label for="message" class="sr-only">Message:</label>
                 <textarea
                   name="message"
-                  id="message"
                   class="form-control"
                   cols="40"
                   rows="10"
                   maxlength="500"
                   placeholder="Message"
-                  autocomplete="off"
                   required
                 ></textarea>
               </div>
-              <div>
-                <div data-netlify-recaptcha="true"></div>
-              </div>
+              <!-- Hidden Inputs -->
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://gregoriodelasheras.github.io/thanks.html"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New email! (GitHub Portfolio)"
+              />
               <!-- Submit Button -->
               <div>
                 <button type="submit" class="btn">Send message</button>

@@ -7,7 +7,7 @@
       font-size: 2rem;
     }
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     h3 {
       font-size: 1.2rem;
@@ -27,9 +27,8 @@
   }
   .main-navigation {
     .navigation-list {
-      padding-top: 0;
-      a {
-        padding: 10px;
+      &__item {
+        padding: 0 5px 5px;
         margin: 10px;
       }
     }
@@ -44,6 +43,10 @@
     .profile__portrait {
       width: 300px;
       margin: 0;
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
     }
   }
   .page-about {
@@ -94,11 +97,7 @@
     }
   }
   .page-contact {
-    .contact p {
-      font-size: 1rem;
-    }
-    .contact-form {
-      padding-top: 2rem;
+    .contact-div {
       .form-control {
         width: 500px;
       }
@@ -113,10 +112,14 @@
       justify-content: space-between;
       text-align: left;
     }
+    .footer-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
     .socialnav {
       text-align: center;
       p {
-        padding: 0 0 1rem 0;
+        margin: 0 0 0.5rem 0;
       }
     }
   }

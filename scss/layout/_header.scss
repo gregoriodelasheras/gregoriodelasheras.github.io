@@ -2,7 +2,8 @@
 
 .page-header {
   img {
-    width: 250px;
+    display: block;
+    width: 300px;
   }
 }
 
@@ -10,9 +11,9 @@
   .navigation-list {
     display: flex;
     list-style-type: none;
-    padding-top: 1rem;
   }
   .navigation-list__item {
+    display: block;
     padding: 5px;
     margin: 5px;
     &:hover,

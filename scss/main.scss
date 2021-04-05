@@ -1,0 +1,31 @@
+/*
+  Order:
+    1. abstracts/
+    2. vendors/
+    3. base/
+    4. layout/
+    5. components/
+    6. pages/
+    7. themes/
+*/
+
+@use 'base/global';
+@use 'base/typography';
+@use 'layout/index';
+@use 'components/buttons';
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/work';
+@use 'pages/contact';
+@use 'components/breakpoints';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+// Normalize
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+// Font Awesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+// Devicon
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css');
+// Animate.css
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');

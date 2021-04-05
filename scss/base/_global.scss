@@ -7,8 +7,7 @@
 }
 
 body {
-  background-color: #0a0a0a;
-  background: linear-gradient(to right, #000000, #444444);
+  background-color: lighten(v.$black, 5%);
   color: v.$white;
   font-family: v.$text-font-stack;
   font-size: 16px;

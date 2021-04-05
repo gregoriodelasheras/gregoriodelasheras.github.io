@@ -1,6 +1,9 @@
 @use '../abstracts/variables' as v;
 
 .page-footer {
+  .footer-title {
+    font-weight: 700;
+  }
   .flex {
     flex-direction: column;
     text-align: center;
@@ -13,7 +16,7 @@
 
 .socialnav {
   a {
-    padding: 0 10px;
+    margin: 0 10px;
     text-decoration: none;
   }
   i:hover,
@@ -21,6 +24,6 @@
     transform: scale(1.2);
   }
   p {
-    padding: 1rem;
+    margin: 1rem 0 0.5rem 0;
   }
 }

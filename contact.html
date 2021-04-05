@@ -37,8 +37,9 @@
       href="favicon/favicon-16x16.png"
       sizes="16x16"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="dist/css/style.production.css" />
-    <title>F. Gregorio de las Heras | Contact</title>
+    <title>F. Gregorio de las Heras | Contact me</title>
   </head>
   <body>
     <div class="wrapper">
@@ -94,37 +95,24 @@
           <div class="contact">
             <h1>Contact</h1>
             <p>Francisco Gregorio de las Heras</p>
-            <p>70806 Kornwestheim, Germany</p>
-            <p>
-              Phone:
-              <a
-                href="tel:+49-177-31-41-280"
-                aria-label="Phone number"
-                rel="nofollow"
-                >+49-177-31-41-280</a
-              >
-            </p>
-            <p>
-              Email:
-              <a
-                href="mailto:francisco.gregoriodelasheras@gmail.com"
-                rel="nofollow"
-              >
-                francisco.gregoriodelasheras@gmail.com
-              </a>
-            </p>
+            <p>Stuttgart, Germany</p>
           </div>
-          <div class="contact-form">
+          <div class="contact-div">
             <h2>Write me a message</h2>
             <!-- Form -->
-            <form action="#" method="post" id="form-contact">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
               <!-- Name -->
               <div>
-                <label for="contact-name" class="sr-only">Name:</label>
+                <label for="name" class="sr-only">Name:</label>
                 <input
                   type="text"
-                  id="contact-name"
-                  name="contact-name"
+                  name="name"
+                  id="name"
                   class="form-control"
                   placeholder="Name"
                   autocomplete="off"
@@ -133,11 +121,11 @@
               </div>
               <!-- Email -->
               <div>
-                <label for="contact-email" class="sr-only">E-mail: </label>
+                <label for="email" class="sr-only">E-mail: </label>
                 <input
                   type="email"
-                  id="contact-email"
-                  name="contact-email"
+                  name="email"
+                  id="email"
                   class="form-control"
                   placeholder="E-mail"
                   autocomplete="off"
@@ -146,11 +134,11 @@
               </div>
               <!-- Subject -->
               <div>
-                <label for="contact-subject" class="sr-only">Subject:</label>
+                <label for="subject" class="sr-only">Subject:</label>
                 <input
                   type="text"
-                  id="contact-subject"
-                  name="contact-subject"
+                  name="subject"
+                  id="subject"
                   class="form-control"
                   placeholder="Subject"
                   autocomplete="off"
@@ -159,10 +147,10 @@
               </div>
               <!-- Message -->
               <div>
-                <label for="contact-message" class="sr-only">Message: </label>
+                <label for="message" class="sr-only">Message: </label>
                 <textarea
-                  id="contact-message"
-                  name="contact-message"
+                  name="message"
+                  id="message"
                   class="form-control"
                   cols="40"
                   rows="10"
@@ -172,9 +160,12 @@
                   required
                 ></textarea>
               </div>
+              <div>
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               <!-- Submit Button -->
               <div>
-                <input type="submit" value="Send message" class="btn" />
+                <button type="submit" class="btn">Send message</button>
               </div>
             </form>
           </div>
@@ -183,27 +174,44 @@
       <footer class="page-footer">
         <div class="container flex">
           <div>
-            <h3>Francisco Gregorio de las Heras</h3>
+            <p class="footer-title">Francisco Gregorio de las Heras</p>
             <p>Copyright &copy; 2021</p>
           </div>
           <div class="socialnav">
             <p>Find me on</p>
-            <a href="https://github.com/gregoriodelasheras" title="GitHub">
+            <a
+              href="https://github.com/gregoriodelasheras"
+              title="GitHub"
+              target="_blank"
+            >
               <i class="fab fa-github fa-2x"></i>
             </a>
-            <a href="#" title="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/francisco-gregorio-de-las-heras"
+              title="LinkedIn"
+              target="_blank"
+            >
               <i class="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="https://panchochancho.itch.io/" title="itch.io">
+            <a
+              href="https://panchochancho.itch.io/"
+              title="itch.io"
+              target="_blank"
+            >
               <i class="fab fa-itch-io fa-2x"></i>
             </a>
             <a
               href="https://www.freecodecamp.org/gregoriodelasheras"
               title="freeCodeCamp"
+              target="_blank"
             >
               <i class="fab fa-free-code-camp fa-2x"></i>
             </a>
-            <a href="https://codepen.io/gregoriodelasheras" title="CodePen">
+            <a
+              href="https://codepen.io/gregoriodelasheras"
+              title="CodePen"
+              target="_blank"
+            >
               <i class="fab fa-codepen fa-2x"></i>
             </a>
           </div>
